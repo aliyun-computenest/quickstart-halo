@@ -58,6 +58,9 @@ ImageBuilder:
       cd /root/
       git clone https://github.com/aliyun-computenest/quickstart-halo
       cd quickstart-halo
+      docker compose up -d
+      sleep 300
+      docker compose down
 
       cat > /etc/systemd/system/halo.service <<EOF
       [Unit]
